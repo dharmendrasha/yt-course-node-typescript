@@ -7,7 +7,7 @@ const router = Router()
 
 // read
 router.get('/', ReadAll)
-router.get(':id', Read)
+router.get('/:id', Read)
 
 //create
 router.post('/', Create)
@@ -17,7 +17,7 @@ router.put('/', Update)
 
 
 //delete
-router.delete('/', Delete)
+router.delete('/:id', Delete)
 
 
 export { router }
